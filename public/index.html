@@ -5,20 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Desenho Assinado</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <main>
     <header>
       <h1>Desenho Assinado</h1>
-      <p>Escolha um número entre 1 e 100. Cada número gera uma figura diferente, assinada com o seu e-mail.</p>
+      <p>Entre com a sua conta Google e escolha um número entre 1 e 100. Cada número gera uma figura diferente, assinada com o e-mail da sua conta.</p>
     </header>
+
+    <!-- Google Identity Services. Troque data-client_id pelo seu Client ID (ele é público). -->
+    <div id="g_id_onload"
+      data-client_id="SEU_CLIENT_ID.apps.googleusercontent.com"
+      data-callback="aoEntrar"
+      data-auto_prompt="false">
+    </div>
+
+    <section id="login">
+      <div class="g_id_signin"
+        data-type="standard"
+        data-theme="filled_black"
+        data-size="large"
+        data-text="signin_with"
+        data-locale="pt-BR">
+      </div>
+      <p id="usuario"></p>
+    </section>
 
     <form id="formulario" novalidate>
       <label for="numero">Número</label>
       <input id="numero" name="numero" type="number" min="1" max="100" step="1" required placeholder="42">
-
-      <label for="email">E-mail</label>
-      <input id="email" name="email" type="email" required placeholder="voce@gmail.com">
 
       <button type="submit">Desenhar</button>
     </form>
