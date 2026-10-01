@@ -43,6 +43,6 @@ Variável de ambiente (Settings > Variables and Secrets): `GOOGLE_CLIENT_ID` com
 
 ## Identificação (preencha após o fork)
 
-Nome: 
-RA: 
+Nome: Vitória Faranhas Braga
+RA: 2026109204
 URL: https://
