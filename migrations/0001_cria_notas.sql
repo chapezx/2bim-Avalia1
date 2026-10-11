@@ -1,0 +1,7 @@
+-- Migration number: 0001 	 2026-10-11T22:17:05.576Z
+
+CREATE TABLE notas (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  aluno TEXT NOT NULL,
+  nota REAL
+);

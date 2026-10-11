@@ -1,0 +1,6 @@
+name = "2bim-avalia1-desenho-assinado"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "desenho-db"
+database_id = "fa45197f-557d-4992-829a-866724878966"
