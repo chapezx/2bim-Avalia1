@@ -36,9 +36,10 @@ jobs:
         uses: actions/ai-inference@v3
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_PAT }}
-        with:
+              with:
           prompt-file: prompt.txt
           system-prompt: Você é um revisor de código objetivo.
+          model: auto
 
       - name: Comenta no PR
         env:
