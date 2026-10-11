@@ -40,6 +40,8 @@ As verificações seguem a ordem: método (405), corpo (400), token (401).
 Framework preset: `None`. Build command: vazio. Build output directory: `public`.
 
 Variável de ambiente (Settings > Variables and Secrets): `GOOGLE_CLIENT_ID` com o Client ID do OAuth Client do Google.
+Workflows do GitHub Actions adicionados.
+
 
 ## Identificação (preencha após o fork)
 
